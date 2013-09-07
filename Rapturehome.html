@@ -1,0 +1,583 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>RAPTURE &middot;</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rapture Events Boston">
+    <meta name="author" content="Kristen Ford">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
+	<script type='text/javascript' src='../assets/simple-contact-form-1/scripts/gen_validatorv31.js'></script>
+	<script src="jquery.localscroll.js" type="text/javascript">	$(document).ready(function() {
+		$('.nav-collapse collapse').localScroll({duration:400});
+	});</script> 
+	<script src="jquery.scrollTo.js" type="text/javascript"></script>
+    <!-- stylesheets -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+	<link href="New_Rapture_Style.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="../assets/simple-contact-form-1/contact.css" rel="stylesheet">
+    <style>
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+      padding-bottom: 40px;
+      color: #5a5a5a; 
+    }
+
+
+
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 0px;
+      margin-bottom: 0px;/* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+    }
+    .navbar-wrapper .navbar {
+	position:fixed;
+	float:left;
+	width:100%;
+	font-size:30px;
+
+    }
+
+    /* Remove border and change up box shadow for more contrast */
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    /*Rapture logo on nav bar*/
+    .navbar .brand {
+      padding: 0px 20px 7px; /* Increase vertical padding to match navbar links */
+      font-size: px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 35px 20px;
+    }
+
+    /* Offset the responsive button for proper vertical alignment */
+    .navbar .btn-navbar {
+      margin-top: 10px;
+    }
+
+
+	    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 0px;
+    }
+	/*arrows on carousel*/
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 30px;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+	  left: 5%;
+	  display: inline-block;
+    }
+
+    .carousel .item {
+      height: 400px;
+	  width: 100%; <!-- 1170px; -->
+	  border-radius: 8px; 
+	-moz-border-radius: 8px; 
+	-webkit-border-radius: 8px; 
+	border: 0px solid ;
+    }
+    .carousel img {
+      position: absolute;
+      top: 50px; /*moves carousel down*/
+      left:20%;
+      width: 60%;<!-- 1170px; -->
+      height: 400px;
+	  border-radius: 8px; 
+	-moz-border-radius: 8px; 
+	-webkit-border-radius: 8px; 
+	border: 0px solid ;
+	padding:20px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 150px;
+	  margin-left:370px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0px;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+	  text-align:center;
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+	
+	
+	
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    .marketing .span4 {
+      text-align: center;
+    }
+    .marketing h2 {
+      font-weight: normal;
+    }
+    .marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (max-width: 979px) {
+
+      .container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+        margin: -20px 0;
+      }
+
+      .carousel .item {
+        height: 400px;
+      }
+      .carousel img {
+        width: auto;
+        height: 400px;
+      }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+
+      .navbar-inner {
+        margin: -20px;
+      }
+
+      .carousel {
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+      .carousel .container {
+
+      }
+      .carousel .item {
+        height: 300px;
+      }
+      .carousel img {
+        height: 300px;
+      }
+      .carousel-caption {
+        width: 65%;
+        padding: 0 70px;
+        margin-top: 100px;
+      }
+      .carousel-caption h1 {
+        font-size: 30px;
+      }
+      .carousel-caption .lead,
+      .carousel-caption .btn {
+        font-size: 18px;
+      }
+
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+
+	<div class="container">  
+<div class="navbar-wrapper">
+       
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+	          <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#"><img src="../assets/img/examples/Rapture_smaller_logo.fw.png"></a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a id="HomeLink" href="#">Home</a></li>
+                <li><a class="ServicesLink" href="#">About</a></li>
+                <li><a class="EventsLink" href="#">Events</a></li>
+				<li><a class="GalleryLink" href="#">Gallery</a></li>
+				<li><a class="TeamLink" href="#">Team</a></li>
+				<li><a class="ContactLink" href="#">Contact Us</a></li>
+              </ul>
+			</div>
+          </div><!-- /.navbar-inner -->
+		 </div><!-- /.navbar -->
+		</div><!-- /.navbar-wrapper -->
+
+		
+		<div id="tabs"> 
+		<div class="row mySplash" id="home">
+		<img class="splashPhoto" src="../assets/img/examples/Rapture Word.fw.png" alt="">
+		</div>
+		<div class="row" id="Services">
+		<div class="text">
+		<p>Rapture represents a state of intense pleasure and joy which is exactly what Rapture Events Boston provides. We are a unique event planning and promotions company focused on consolidating entrepreneurial, musical, and artistic markets while partnering with grass roots service organizations to uplift Boston communities. </p>
+		</div>
+		<h1>Services</h1>	
+			<div class="groupServices">
+			
+			<div class="myServices span5">
+			  <img src="../assets/img/examples/eventService.fw.png" alt="">
+			  <p class="serviceDes">We electrify metro Boston by providing an outlet for art, entertainment, and creativity that caters to an urban market.</p>
+				
+			</div>
+			<div></div>
+			<div class="myServices span5">
+			
+			  <img src="../assets/img/examples/marketService.fw.png" alt="">
+			  <p class="serviceDes">We create mutually beneficial partnerships between professional organizations and Boston’s diverse urban consumers.</p>
+			</div>
+			<div></div>
+			<div class="myServices span5">
+			  <img src="../assets/img/examples/civicService.fw.png" alt="">
+			  <p class="serviceDes">We dedicate a minimum of 10% of proceeds to Boston’s urban communities in need. Fighting homelessness. Combating Hunger. Affecting change.</p>
+			
+			</div>
+			<div></div>
+			<div class="myServices span5">
+			
+			  <img src="../assets/img/examples/fundService.fw.png" alt="">
+			  <p class="serviceDes">We find creative ways to fundraise in support of campaigns focused on hunger (ex. Fill the Fridge), homelessness, and health/fitness.</p>
+			
+			</div>
+			</div>
+		</div>
+		
+		<div class="row" id="event">
+		<br><br><br><br><br>
+		<div class="box">
+		<div class="events">
+<table>
+<tbody>
+	<tr>
+		<th>Date</th>
+		<th>Events</th>
+	</tr>
+	
+	<tr class="anEvent" style="cursor: pointer;" onclick="document.location = 'https://www.facebook.com/events/512106512201102/';">
+		<td class="date">September</td>
+		<td class="location">First house party with DJ Pudgemcee on Fort Hill</td>
+	</tr>
+	
+	<tr class="anEvent" style="cursor: pointer;">
+		<td class="date">October</td>
+		<td class="location">Halloween Party at Naga</td>
+	</tr>
+	
+	<tr class="anEvent" style="cursor: pointer;">
+		<td class="date">November</td>
+		<td class="location">Black Film Night</td>
+	</tr>
+	
+	<tr class="anEvent" style="cursor: pointer;">
+		<td class="date">December</td>
+		<td class="location">New Years Party DJ 2Tone Jones</td>
+	</tr>
+	<tr class="anEvent" style="cursor: pointer;">
+		<td class="date">January</td>
+		<td class="location">Black Film Night</td>
+	</tr>
+	<tr class="anEvent" style="cursor: pointer;">
+		<td class="date">February</td>
+		<td class="location">Speed Dating Event at Scholars/ Blue Dragon
+</td>
+	</tr>
+	</tbody>
+</table>
+</div>
+</div> 
+		</div>
+			
+
+	<div id="myCarousel" class=" row carousel slide">
+	<br><br><br><br>
+      <div class="carousel-inner">
+	    <div class="item active">
+          <img src="../assets/img/examples/def_jam.fw.png" alt="">
+        </div>
+		<div class="item">
+          <img src="../assets/img/examples/extrahorn.fw.png" alt="">
+        </div>
+        <div class="item">
+          <img src="../assets/img/examples/morejazz.fw.png" alt="">
+        </div>
+        <div class="item">
+          <img src="../assets/img/examples/hornjazz.fw.png" alt="">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	  <br><br><br>
+    </div><!-- /.carousel -->
+	
+	
+	
+		
+		<div class="row" id="team">
+		<br><br><br><br><br>
+		<div class="box">
+		<div class="events">
+			<table>
+				<tbody>
+			<tr>
+				<th>Name</th>
+				<th>Position</th>
+			</tr>
+			
+			<tr class="anEvent" style="cursor: pointer;" onclick="document.location = 'https://www.facebook.com/events/512106512201102/';">
+				<td class="date">Brandon Ransom</td>
+				<td class="location">First house party with DJ Pudgemcee on Fort Hill</td>
+			</tr>
+			
+			<tr class="anEvent" style="cursor: pointer;">
+				<td class="date">Edward Hegeman</td>
+				<td class="location">Halloween Party at Naga</td>
+			</tr>
+			
+			<tr class="anEvent" style="cursor: pointer;">
+				<td class="date">Kristen Ford</td>
+				<td class="location">Black Film Night</td>
+			</tr>
+			
+			<tr class="anEvent" style="cursor: pointer;">
+				<td class="date">Ronald Douglas</td>
+				<td class="location">New Years Party DJ 2Tone Jones</td>
+			</tr>
+	</tbody>
+</table>
+</div>
+</div> 
+</div>
+		 
+	<div class="row" id="contact">
+		<br><br><br>
+		<h1>Rapture Events Boston</h1>
+		<h2>Email: rapturellp@gmail.com</h2>
+		<h2>Phone:404-944-8822</h2>
+		<h2>Contact us about partnerships, events, or community outreach opportunities.</h2>
+		<br><br><br>
+		</div>
+
+ </div> <!-- tabs -->
+
+</div> <!-- /.container -->
+   
+
+
+	<script type="text/javascript">
+	
+	//$(document).ready(function(){
+
+
+		// Scroll page to the bottom
+		$('a.ContactLink').click(function(){
+			
+			$('html, body').animate({scrollTop: $('#contact').position().top}, 'slow');
+			
+			return false;
+		
+		});	
+		
+		$('a.ServicesLink').click(function(){
+			
+			$('html, body').animate({scrollTop: $('#Services').position().top}, 'slow');
+			
+			return false;
+		
+		});	
+		
+		$('a.EventsLink').click(function(){
+			
+			$('html, body').animate({scrollTop: $('#event').position().top}, 'slow');
+			
+			return false;
+		
+		});	
+		
+		$('a.TeamLink').click(function(){
+			
+			$('html, body').animate({scrollTop: $('#team').position().top}, 'slow');
+			
+			return false;
+		
+		});
+		
+		$('a.GalleryLink').click(function(){
+			
+			$('html, body').animate({scrollTop: $('#myCarousel').position().top}, 'slow');
+			
+			return false;
+		
+		});
+		
+	//})
+			
+	</script>
+	
+
+    <!-- Carousel
+    ================================================== -->
+
+
+
+
+
+
+    <!-- SPLASH CAROUSEL
+    ================================================== -->
+
+<!-- /* THIS IS WHER THE CODE GOESS!!!*/  -->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script>
+	!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="../assets/js/holder/holder.js"></script>
+  </body>
+</html>
